@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery title="Static Library Gallery" frameColor="0xFFFFFF" frameWidth="5" imagePadding="10" displayTime="6">
+<image>
+   <filename>scan0011.jpg</filename>
+   <caption>Participants with their certificates</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0012.jpg</filename>
+   <caption>Children engrossed in a game </caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0010.jpg</filename>
+   <caption>First Winner Anirban Chakraborthy receiving the prize for Mrs.Nirmala Raman,Educationist </caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0013.jpg</filename>
+   <caption> Second Winner Jhanani receiving the prize</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+</gallery>

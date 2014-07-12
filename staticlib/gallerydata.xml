@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gallery title="Static Library Gallery" frameColor="0xFFFFFF" frameWidth="5" imagePadding="10" displayTime="6">
+<image>
+   <filename>scan0001.jpg</filename>
+   <caption>Mathematician Late Shri PK Srinivasan inaugurates bookworms'.</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0002.jpg</filename>
+   <caption>Shri PKS interacts with kids.</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0018.jpg</filename>
+   <caption>Outside bookworms' .</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0015.jpg</filename>
+   <caption>Main Lib/Kids reading room</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0017.jpg</filename>
+   <caption>Librarian at work </caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0020.jpg</filename>
+   <caption>Common reading room</caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>scan0014.jpg</filename>
+   <caption>Magazines Section </caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+<image>
+   <filename>libpic.jpg</filename>
+   <caption>Kids immersed in books </caption>
+   <width>480</width>
+   <height>480</height>
+</image>
+</gallery>

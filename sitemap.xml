@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.google.com/schemas/sitemap/0.84"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84
+                      http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+
+<url>
+  <loc>http://www.bookwormslib.com/</loc>
+  <priority>0.9</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/index.html</loc>
+  <priority>0.9</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/news.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/tariff.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/sales.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/gallery.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/contact.html</loc>
+  <priority>0.9</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/staff.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/new.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/reviews.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/onlinelib.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/mobilelib.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/staticlib.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/reg.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/asearch.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/wbd2006pics.html</loc>
+  <priority>0.5</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/donors.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/presspics.html</loc>
+  <priority>0.7</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/staticpics.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/revkingoftorts.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/revheidi.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/revmatilda.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/revhp3.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://www.bookwormslib.com/wbd2005pics.html</loc>
+  <priority>0.6</priority>
+  <lastmod>2006-08-09T07:03:00+00:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>

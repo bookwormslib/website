@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>bookworms' library : a nest too cosy to miss...</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="bookworms library chennai feedback" />
+<meta name="keywords" content="bookworms,library,chennai,mobile,online,feedback" />
+<meta name="author" content="Your Name / Original design by Andreas Viklund - http://andreasviklund.com" />
+<link rel="stylesheet" href="andreas09.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="js/yav.js"></script>
+    <script type="text/javascript" src="js/yav-config.js"></script>
+<script type="text/javascript" language="javascript">
+    var rules=new Array();
+    rules[0]='feedback:Your Feedback|required';
+    rules[1]='name:Name|required';
+    rules[2]='name:Name|minlength|4';
+    rules[3]='name:Name|alphaspace';   
+      rules[4]='email:E-Mail|required';
+     rules[5]='email:E-Mail|email';    
+     rules[6]='phone:Phone|required';
+     rules[7]='phone:Phone|numeric';
+    rules[8] ='phone:Phone|minlength|8';
+    rules[9]='mobile:Mobile|numeric';
+   
+    
+    
+    
+   
+</script>
+</head>
+
+<body>
+<div id="container">
+
+<div id="sitename">
+<table width="100%">
+<tr>
+<td>
+<h1>bookworms' library</h1>
+<b>Nest unsurpassable for bookworms...clean...cozy...cavernous</b>
+</td>
+<td align="right" >
+<img src="book.gif" align"right">
+</td>
+</tr>
+</table>
+</div>
+
+<div id="mainmenu">
+<script src="scripts/mainmenu.js"></script>
+</div>
+ 
+<div id="wrap">
+
+<div id="leftside">
+</div>
+
+<div id="rightside">
+<h1>Search</h1>
+<p class="searchform" >
+<form method="post" action="search1.php">
+<input type="text" alt="Search" class="searchbox" name="keyword" />
+<input type="hidden" name="page" value="1"/>
+<input type="submit" value="Go!" class="searchbutton" />
+</form>
+</p>
+</div>
+
+<div id="content">
+<center><h4>Feedback</h4></center>
+</div><br>
+<div id="content">
+<div id="errorsDiv"></div>
+<form name="reg" onsubmit="return performCheck('reg',rules,'innerHtml');"  method="POST"  action="feedback.php" >
+<table width="95%">
+<tr>
+<th><font color="red">Type</font></th>
+<td>
+<select class="searchbox1" name="type">
+<option value='Suggestion'>Suggestion</option>
+<option value='Query'>Query</option>
+<option value='Request'>Feature Request</option>
+<option value='Comment'>Comment</option>
+<option value='Comment'>Complaint</option>
+</select>
+</td>
+</tr><tr>
+<th><font color="red">About</font></th>
+<td>
+<select class="searchbox1" name="about">
+<option value='General'>General</option>
+<option value='Online'>Online Edition</option>
+<option value='Mobile'>Mobile Edition</option>
+<option value='Static'>Static Edition</option>
+<option value='Sales'>Sales</option>
+<option value='Service'>Service</option>
+<option value='Website'>Website</option>
+</select>
+</td>
+</tr>
+<tr>
+<th><font color="red">Your Feedback</font></th>
+<td><textarea class="searchbox1" name="feedback" rows='8' cols='25'></textarea></td>
+</tr>
+<tr>
+<th><font color="red">Name</font></th>
+<td><input type="text" class="searchbox1" name="name"></td>
+</tr>
+<tr>
+<th><font color="red">E-Mail</font></th>
+<td><input type="text" class="searchbox1" name="email"></td>
+</tr>
+<tr>
+<th><font color="red">Phone</font></th>
+<td><input type="text" class="searchbox1" name="phone"></td>
+</tr>
+<tr>
+<tr>
+<th>Mobile</th>
+<td><input type="text" class="searchbox1" name="mobile"></td>
+</tr>
+<tr>
+</table>
+<br>
+<center>
+<input type="submit" class="searchbutton" value="Submit">
+<input type="reset" class="searchbutton" value="Reset&nbsp">
+</center>
+<br>
+<p>*Fields in <font color="red">RED</font> are mandatory</p>
+</form>
+</div>
+<div class="clearingdiv">&nbsp;</div>
+</div>
+</div>
+<div id="footer">
+<script src="scripts/copyright.js"></script>
+</div>

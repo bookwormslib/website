@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multi-page template</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+	<link rel="stylesheet" href="MetroJs.min.css">
+	<link rel="shortcut icon" href="../book.gif">
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	<script src="MetroJs.min.js"></script>
+	
+
+
+<style>
+@media all and (max-width: 50em) {
+  .my-breakpoint .ui-block-a,
+  .my-breakpoint .ui-block-b,
+  .my-breakpoint .ui-block-c,
+  .my-breakpoint .ui-block-d,
+  .my-breakpoint .ui-block-e {
+    width: 100%;
+    float:none;
+  }
+}
+</style>
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<script>
+
+$(document).ready(function(){
+        $(".live-tile").liveTile();
+    });
+
+</script>
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1><img src="../book.gif" alt="Low resolution logo" class="align-left" width="15%" />bookworms'<sup>2001</sup></h1>
+	</div>
+
+	<div data-role="header">
+		<form action="search.php" method="post">
+		     <input type="search" name="query" id="search-1" value="" placeholder="Search Titles, Authors, Subject">
+		</form>
+	</div>
+
+	<div role="main" class="ui-content">
+
+<div class="ui-grid-b my-breakpoint">
+
+<div class="ui-block-a">
+<div class="ui-body">
+
+<div data-role="collapsible" data-inset="false"  data-iconpos="bottom">
+    <h3>Online Social</h3>
+    <p>
+<img src="../book.gif" alt="Low resolution logo" class="align-left" width="20%" />
+	Enroll online membership and get books of your choice from our rare inventory delivered at home. Once your reading is done, we collect them back. NO DELIVERY CHARGES..</p>
+</div>
+
+<div data-role="collapsible" data-inset="false" iconpos="top" >
+    <h3>On Wheels</h3>
+    <p>
+	<img src="../thumbs/mobile.jpg" alt="Low resolution logo" class="align-left" width="20%" />
+	Are you in a huge flat complex? You have a problem of going over to a library? Here our "Library on Wheels" would solve your problem by visiting your complex periodically. Enroll membership for "Library on Wheels" and save your time and energy to go hunting for books ...</p>
+</div>
+
+<div data-role="collapsible" data-inset="false" iconpos="top">
+    <h3>On Floor</h3>
+    <p> 
+	<img src="../images/libpic.jpg" alt="Low resolution logo" class="align-left" width="15%" />
+	bookworms' library is a landmark in kk nagar, catering to over 1000 booklovers in and around. Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently. Magazines and CDs are also available for lending ...  </p>
+</div>
+
+</div>
+</div> <!-- Column Close -->
+
+<div class="ui-block-b">
+<div class="ui-body">    
+
+<div class="tile-strip two-wide">
+<div class="live-tile two-wide two-tall" data-mode="flip" data-delay="4000" data-direction="horizontal" data-pause-onhover="true">
+
+    <div style="background-color:#ddd;color:black">
+		<h2>Just Added ...</h2>
+	<ul>
+		<li style="margin: 1em 0;">PONGAL MALAR 2004 THE HINDU</li>
+<li style="margin: 1em 0;">PONGAL MALAR 2004 THE HINDU</li>
+<li style="margin: 1em 0;">PONGAL MALAR 2004 THE HINDU</li>
+<li style="margin: 1em 0;">PONGAL MALAR 2004 THE HINDU</li>
+<li style="margin: 1em 0;">PONGAL MALAR 2004 THE HINDU</li>
+	</ul>
+   </div>
+
+    <div style="background-color:#eee;color:black">
+	<h2>Just Added ...</h2>
+    </div>
+</div>
+</div>
+
+
+</div>
+</div> <!-- Column B close -->
+
+<div class="ui-block-c">
+ <div class="ui-body ui-body-d">
+
+<div class="tile-strip two-wide">
+<div class="live-tile two-wide two-tall" data-mode="carousel" data-delay="4000" data-pause-onhover="true" data-direction="horizontal">
+
+    <div style="background-color:#eee;color:black">
+<a class="twitter-timeline" href="https://twitter.com/bookworms2" data-widget-id="425929323938189312">Tweets by @bookworms2</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div> <!--Twitter -->
+
+    <div style="background-color:#eee;color:black">
+        <div class="fb-like-box" style="background-color:white;" data-href="http://www.facebook.com/bookworms3" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+    </div> <!--FB -->
+
+
+    <div style="background-color:#eee;color:black">
+	<div class="g-page" data-href="//plus.google.com/113548044475520222350" data-rel="publisher"></div>        
+    </div> <!--Plus -->
+
+</div>
+</div>
+
+ </div>
+</div> <!-- Column C close -->
+
+</div> <!-- Grid -->
+
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>&copy; 2012-2014 bookworms' library</h4>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

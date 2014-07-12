@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>bookworms' library : a nest too cosy to miss...</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="bookworms library chennai official site" />
+<meta name="keywords" content="bookworms,chennai,official,mobile,online,static,kknagar" />
+<meta name="author" content="Your Name / Original design by Andreas Viklund - http://andreasviklund.com" />
+<META name="verify-v1" content="ZIXoeLZau3BY7h6PfJ96xd1qOxyDW3/WNkHZ7U6oe08=" />
+<script src="scroll.php"></script>
+
+<script type="text/javascript">
+	/************************************************************************************************************
+	(C) www.dhtmlgoodies.com, November 2005
+	
+	This is a script from www.dhtmlgoodies.com. You will find this and a lot of other scripts at our website.	
+	
+	Terms of use:
+	You are free to use this script as long as the copyright message is kept intact. However, you may not
+	redistribute, sell or repost it without our permission.
+	
+	Thank you!
+	
+	www.dhtmlgoodies.com
+	Alf Magne Kalleland
+	
+	************************************************************************************************************/
+		
+	var slideTimeBetweenSteps = 30;	// General speed variable (Lower = slower)
+	
+	
+	var scrollingContainer = false;
+	var scrollingContent = false;
+	var containerHeight;
+	var contentHeight;	
+	
+	var contentObjects = new Array();
+	var originalslideSpeed = false;
+	function slideContent(containerId)
+	{
+		var topPos = contentObjects[containerId]['objRef'].style.top.replace(/[^\-0-9]/g,'');
+		topPos = topPos - contentObjects[containerId]['slideSpeed'];
+		if(topPos/1 + contentObjects[containerId]['contentHeight']/1<0)topPos = contentObjects[containerId]['containerHeight'];
+		contentObjects[containerId]['objRef'].style.top = topPos + 'px';
+		setTimeout('slideContent("' + containerId + '")',slideTimeBetweenSteps);
+		
+	}
+	
+	function stopSliding()
+	{
+		var containerId = this.id;
+		contentObjects[containerId]['slideSpeed'] = 0;	
+	}
+	
+	function restartSliding()
+	{
+		var containerId = this.id;
+		contentObjects[containerId]['slideSpeed'] = contentObjects[containerId]['originalSpeed'];
+		
+	}
+	function initSlidingContent(containerId,slideSpeed)
+	{
+		scrollingContainer = document.getElementById(containerId);
+		scrollingContent = scrollingContainer.getElementsByTagName('DIV')[0];
+		
+		scrollingContainer.style.position = 'relative';
+		scrollingContainer.style.overflow = 'hidden';
+		scrollingContent.style.position = 'relative';
+		
+		scrollingContainer.onmouseover = stopSliding;
+		scrollingContainer.onmouseout = restartSliding;
+		
+		originalslideSpeed = slideSpeed;
+		
+		scrollingContent.style.top = '0px';
+		
+		contentObjects[containerId] = new Array();
+		contentObjects[containerId]['objRef'] = scrollingContent;
+		contentObjects[containerId]['contentHeight'] = scrollingContent.offsetHeight;
+		contentObjects[containerId]['containerHeight'] = scrollingContainer.clientHeight;
+		contentObjects[containerId]['slideSpeed'] = slideSpeed;
+		contentObjects[containerId]['originalSpeed'] = slideSpeed;
+		
+		slideContent(containerId);
+		
+	}
+	
+
+	
+	</script>
+
+
+<link rel="stylesheet" href="andreas09.css" type="text/css" media="screen" />
+</head>
+
+<body>
+<div id="container">
+
+<div id="sitename">
+
+<table width="100%">
+<tr>
+<td>
+<h1>bookworms' library (beta)</h1>
+<b>Nest unsurpassable for bookworms...clean...cozy...cavernous</b>
+</td>
+<td align="right" >
+<img src="book.gif" align="right"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="mainmenu">
+
+<ul>
+
+<li><a class="current" href="index.html">Home</a></li>
+<li><a href="news.html">News & Events</a></li>
+<li><a href="tariff.html">Tariff Plans</a></li>
+<li><a href="sales.html">Sales Counter</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a class="" href="FAQ.html">FAQ</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</div>
+
+ 
+<div id="wrap">
+
+<div id="leftside">
+<h1>Literary Corner</h1>
+<p>
+<a class="nav" href="staff.html">Staff Recommends</a><span class="hide"> | </span>
+
+<a class="nav" href="memb.html">Member Recommends</a><span class="hide"> | </span>
+
+<a class="nav" href="new.html">New Additions</a><span class="hide"> | </span>
+
+<a class="nav" href="reviews.html">Book Reviews</a><span class="hide"> | </span>
+
+</p>
+
+
+<h1>Our Concoctions</h1>
+<p>
+<a class="nav" href="onlinelib.html">Online Library</a><span class="hide"> | </span>
+
+<a class="nav" href="mobilelib.html">Mobile Library</a><span class="hide"> | </span>
+
+<a class="nav" href="staticlib.html">Static Library</a><span class="hide"> | </span>
+
+</p>
+
+
+<h1>Top Three Picks</h1>
+<div align="center"><img src="images/onenight.jpg" height="104" width="70" class="thumbnail" alt="one night at the call centre" />
+<br/><b>One Night @ the Call Centre</b><br/>Chetan Bhagat</div>
+
+<br/>
+<div align="center"><img src="images/fivepoint.jpg" height="104" width="70" class="thumbnail" alt="five point someone" />
+
+<br><b>A Five Point Someone </b><br>Chetan Bhagat</div>
+
+<br/>
+<div align="center"><img src="images/godfather.jpg" height="104" width="70" class="thumbnail" alt="godfather" />
+<br/><b>Godfather</b><br/>Mario Puzo</div>
+
+<br/>
+<h1>New Arrivals</h1>
+<div style="HEIGHT:150px; WIDTH:170px; OVERFLOW:auto" id="news">
+<script type="text/javascript">buildScroller();</script>
+</div>
+<script type="text/javascript">
+initSlidingContent('news',1);
+</script>
+</div>
+
+
+<div id="rightside">
+<h1>Search</h1>
+
+<p class="searchform" >
+<form method="post" action="search1.php">
+<input type="text" alt="Search" class="searchbox" name="keyword" />
+
+<input type="hidden" name="page" value="1"/>
+<input type="submit" value="Go!" class="searchbutton" />
+</form>
+</p>
+
+<p>
+<a class="nav" href="asearch.html">Advance Search</a><span class="hide"> | </span>
+<a class="nav" href="catalog.html">Browse Catalog</a><span class="hide"> | </span>
+</p>
+<br>
+<h1>Login (Online Members Only)</h1>
+<p class="searchform">
+<form method="POST" action='online.php'>
+Customer No. : <br><input type="text" alt="username" name=username class="searchbox" /> <br>
+
+Password : <br><input type="password"  name=password class="searchbox">
+<input type="submit" value="Go!" class="searchbutton" />
+
+</form>
+</p>
+<p>
+<a class="nav" href="reg.html">Enrollment for Online Membership</a><span class="hide"> | </span>
+
+</p>
+<br>
+<h1>Silverfish !</h1>
+Send us a mail to get our bi-monthly printed newsletter "Silverfish" by post.</p>
+
+</p><br><br><br>
+<h1>Offer</h1>
+Harry Potter and the Deathly Hallows - Pre publication offer rate is Just Rs. 875. Order your copy right now </p>
+<br>
+ 
+<br>
+<h1>Ads</h1>
+<script type="text/javascript"><!--
+google_ad_client = "pub-8624485313351209";
+google_ad_width = 120;
+google_ad_height = 240;
+google_ad_format = "120x240_as";
+google_ad_type = "text_image";
+google_ad_channel ="7166259527";
+google_color_border = "66B5FF";
+google_color_bg = "F0F0F0";
+google_color_link = "E1771E";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+<div id="content">
+
+<object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,79,0"
+        id="Movie2"
+        width="97%"  height="100"
+      >
+        <param name="movie" value="Movie2.swf">
+        <param name="bgcolor" value="#CCCCCC">
+
+        <param name="quality" value="high">
+        <param name="allowscriptaccess" value="samedomain">
+        <embed
+          type="application/x-shockwave-flash"
+          pluginspage="http://www.macromedia.com/go/getflashplayer"
+          name="Movie2"
+          width="97%" height="100"
+          src="Movie2.swf" 
+          bgcolor="#CCCCCC"
+          quality="high"
+          swliveconnect="true"
+          allowscriptaccess="samedomain"
+        >
+
+          <noembed>
+          </noembed>
+        </embed>
+
+      </object>
+
+</div>
+<br>
+<div id="content">
+
+<p align="right">
+<marquee scrolldelay='150'><font color="#000080">| Call 91-044-24899779 to get in touch with the official bookworms... | Facility of Online & Mobile Edition will be available only to the Chennaities |</font> </marquee>
+<br>
+<h1>Welcome to bookworms' library interface</h1>
+
+<h2>Online Library</h2>
+
+<p>
+<font size = "2" ><b><u>Get books deliverd at your doorstep !</u></b></font>
+<br>
+
+<p class="intro" align="justify">bookworms’ library has been trying its best to meet the voluminous demand of booklovers through our static library at KK Nagar since 2001.  The facilities we offer are very affordable and many have voiced on their sincere appreciation. Although there are a few members who take the pain of traveling over 10kms from their homes to our KK Nagar library , we at bookworms, felt the need to cater to many others, who are internet users, who do not have a good library around their place can enjoy and fire their reading habits to sky limits.  And that’s how “bookworms’ library online” is now on. <a href=onlinelib.html><b> Click to read
+        more...</a>
+
+</p>
+</div>
+
+<div id="content">
+
+<h2>Mobile Library</h2>
+<img src="thumbs/mobile.jpg" height="130" width="150" alt="Mobile library" />
+<p class="intro" align="justify">bookworms’ has been at the receiving end of many complaints from parents that children are wasting time in watching TV soaps, and playing addictive Computer games. They figured out that a possible reason is that there is no good library in their neighourhood where focus could be diverted to reading. After breaking our heads over this issue, we struck upon an ingenious plan… We chose to transform a mini truck into an inspirational wagon, decorated with lights and fans inside, with sufficient stacking of reading materials for different age group, and drive over to various areas periodically thereby motivating them and encouraging the kids to read books. So next time you open your window and smell the fresh air coming in, there you can see, the mobile edition of bookworms’ library trundling down to your doorstep <a href=mobilelib.html> Click to read
+        more..</a>
+
+</div>
+<div id="content">
+
+<h2>Static Library</h2>
+<img src="images/libpic.jpg" height="130" width="150" alt="Static library" />
+
+<p class="intro" align="justify">bookworms’ library is a unit of Infinitebooks.com Private Limited started in Dec 2001.
+Today, this static library caters to about 700 members in and around KK Nagar, Chennai, with about 
+15000 materials of different types ranging from books to magazines to CDs..</a>
+</p>
+
+<p class="intro" align="justify">
+Book lovers find this library very convenient as the ambience is pleasing and the reading room is an important value addition.  Children enjoy reading as they can conveniently loll on bean bags and the adults with a magazine on hand forgetting the worries of the mundane world for a while.  Books and other materials are being added frequently depending upon the demand and age groups.  
+</a>
+</p>
+
+<p class="intro" align="justify">
+This static library, as a resource centre, helps in upgrading the subject knowledge among students (School and Engineering) by conducting coaching classes.  Classes on “Spoken Hindi” and “Spoken Japanese” are also a few features of this library.  Apart from serious subjects, coaching on “Chess” is also undertaken for kids aged above 5 years.<a href=staticlib.html> Click to read
+        more...</a>
+</p>
+
+</div>
+
+<br>
+<div id="content">
+
+<h1>Cultivating and Motivating Reading Habit</h1>
+<img src="images/reading.jpg" height="130" width="100" alt="Reading" />
+<p align="justify">Reading is one of the best habits which starts from the age of a toddler and it continues throughout the life. Thus a good reading habit that is cultivated in the early stages of a child is like gifting the child with a fortune . There is nothing bigger than the “Wealth of Knowledge” – being earned and accumulated right from the childhood and through the older ages . It’s this habit that helps them to walk through the better spheres of education, career and the other prospects .
+
+Child psychologists have very often stressed upon the importance of reading .
+
+How and from where does the habit start? Of course, it is from parents. 
+
+Children dog the footsteps of elders . Parents are their best role models. So, what the parents do would have a huge impact on their kids. The more they read , the more the child would gain .
+
+The parents should make it a point that they have a reasonable time spent with their kids with good books around. They should initially read it aloud for them preferably with gestures and actions. They can narrate a story or a rhyme at the bed-time. The Child would pick up the sounds of the words and the meanings conveyed to them by the parents and slowly they would like to start self-reading. The parents can take the children to the nearest library and make them know what different types of books are available .
+
+And for the grown ups, its better to read books than spending time on watching soaps and complaining of boredom.
+
+What’re the gains on reading book?
+
+You get every thing under the sky - It helps improving your vocabulary, knowledge, knowing more about places or countries that you can not visit, knowing more people whom you can not meet.
+</p>
+
+<h2>Quotations</h2>
+<ul>
+	<li>Reading is an adventure that never ends!</li>
+
+	<li>Reading is to the mind as exercise is to the body!</li>
+	<li>A good book on your shelf is a friend that turns its back on you and remains a friend!</li>
+
+	<li>The man who does not read good books has no advantage over the man who can't read them!</li>
+
+<p></p>
+
+<h2></h2>
+<p></p>
+
+</div>
+
+<div class="clearingdiv">&nbsp;</div>
+</div>
+</div>
+<div id="footer">&copy; 2006-2010 bookworms' library | Design by <a href="http://www.sayee.no-ip.com">Seshasayee Gopi</a> | Tech Support by <a href="http://vvishnu.blogspot.com">Vishnu Vijayaraghavan</a>
+
+<br/><a href='dis.html'>Disclaimer & Privacy Policy</a>
+<br/>Page Last Updated on May 19th 2007
+</div>
+
+2010 bookworms' library | Design by <a href="http://www.sayee.no-ip.com">Seshasayee Gopi</a> | Tech Support by <a href="http://vvishnu.blogspot.com">Vishnu Vijayaraghavan</a>
+
+<br/><a href='dis.html'>Disclaimer & Privacy Policy</a>
+<br/>Page Last Updated on June 06 2007
+</div>
+
