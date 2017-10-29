@@ -108,8 +108,8 @@ END;
 else 
 {
 $query = "select count(1) as count from customer_reg where email='" . $mail .	"'";
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $period = $line['count'];
 if($period == 0)
 {
@@ -118,7 +118,7 @@ $query = "insert into customer_reg values(null,''," . concat($initial) . "," . c
 "," . concat($pincode) . "," . concat($phone) . "," . concat($mobile) . "," . concat($mail) .
 ", " . concat(dateconvert($dob)) . "," . concat($office) . "," . concat($off_town) . "," . concat($off_phone) . ",'U','0001-01-01')" ;
 //echo $query;
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
 if(!$result)
 {
 echo <<<END
@@ -127,14 +127,14 @@ echo <<<END
 <center><h3>Error in Processing - Try again Latter</h3></center>
 </div>
 END;
-mysql_query("COMMIT");
+mysqli_query($con,"COMMIT");
 }
 else
 {
 
 $query= "select reg_id as reg_id from customer_reg where email= '" . $mail . "'";
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $regid = $line['reg_id'];
 
 $to = $mail;
@@ -144,7 +144,7 @@ $msg .= "<br><br>Please <a href='http://www.bookwormslib.com/verify.php?mail=" .
 $msg .= "<br><br>Thanks,<br><b>bookworms'</b>";
 
 $nameto = $name;  
-$from = "info@bookwormslib.com";  
+$from = "info@bookwormslibrary.com";  
 $namefrom = "Bookworms Registration";  
 $newLine = "\r\n";  
 

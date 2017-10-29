@@ -48,14 +48,6 @@ include("include/mainmenu.html");
 <div id="wrap">
 
 <div id="leftside">
-<h1>Literary Corner</h1>
-<p>
-<a class="nav" href="staff.html">Staff Recommends</a><span class="hide"> | </span>
-
-<a class="nav" href="new.html">New Additions</a><span class="hide"> | </span>
-
-<a class="nav" href="reviews.html">Book Reviews</a><span class="hide"> | </span>
-
 </p>
 
 <?php
@@ -95,7 +87,7 @@ echo "Required Fields Missing</h3>
 }
 else 
 {
-$to = "info@bookwormslib.com";
+$to = "info@bookwormslibrary.com";
 $subject = "Feedback from " . $name . " regarding " . $about . " " . $type . " (Docket No. " . $docno . ")";
 $msg = "Feedback Type : " . $type . "\n" ;
 $msg = $msg . "About : " . $about . "\n" ;
