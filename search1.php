@@ -152,7 +152,7 @@ $query = $query . $b;
 $link = $link . $d;
 //echo $query;
 //echo $link;
-$result = mysql_query($query) or die('Query failed: ' . mysql_error());
+$result = mysqli_query($con,$query) or die('Query failed: ' . mysqli_error($con));
 }
 ?>
 <div id="container">
@@ -192,7 +192,7 @@ $lt2=0;
 $ty=0;
 if ($ind!=0)
 {
-$max = mysql_num_rows($result);
+$max = mysqli_num_rows($result);
 $lt1 = ($page - 1) * $limit;
 $lt2 = $page * $limit;
 $ty = $lt1 + 1;
@@ -215,7 +215,7 @@ echo <<<END
 END;
 $i=0;
 $tot = ceil($max/$limit);
-while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+while ($line = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 $i++;
 if ($i > $lt1 && $i <= $lt2)
 {
