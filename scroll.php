@@ -11,7 +11,7 @@ Article = new Array;
 i=0;
 
 <?php
-while ($line = mysql_fetch_array($res, MYSQL_ASSOC))
+while ($line = mysqli_fetch_array($res, MYSQLI_ASSOC))
 {
 ?>
 
