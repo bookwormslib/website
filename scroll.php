@@ -2,7 +2,7 @@
 Header("content-type: application/x-javascript");
 require_once("db.php");
 $query = "select title,inventory_no from inventory order by inventory_id desc limit 10";
-$res = mysql_query($query) or die('Query failed: ' . mysql_error());
+$res = mysqli_query($query) or die('Query failed: ' . mysqli_error());
 ?>
 
 

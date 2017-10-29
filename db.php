@@ -8,7 +8,7 @@ $db =  getenv('REMOTE_DB');
 $con = mysqli_connect($host, $dbuser, $dbpass) or  
     die("Could not connect: " . mysql_error()); 
 
-mysqli_select_db($db);  
+mysqli_select_db($con,$db);  
 
 ?>
 
