@@ -100,7 +100,7 @@ $msg = $msg . "Date : " . date("j-n-Y") ."\n";
 $msg = $msg . "Docket No : " . $docno ."\n";
 //echo $subject;
 //echo $msg;
-if(Send_Mail($to,$name,$subject,$msg))
+if(Send_Mail($to,"Bookworms",$subject,$msg))
 {
 echo <<<END
 <div id='content'>

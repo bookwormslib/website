@@ -55,10 +55,10 @@ $mail->Port = 587;
 $mail->isHTML(true);
 
 if(!$mail->send()) {
-    echo "Email not sent. " , $mail->ErrorInfo , PHP_EOL;
+    //echo "Email not sent. " , $mail->ErrorInfo , PHP_EOL;
 	return false;
 } else {
-    echo "Email sent!" , PHP_EOL;
+    //echo "Email sent!" , PHP_EOL;
     return true;
 }
 
