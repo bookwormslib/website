@@ -4,12 +4,12 @@ require_once("../db.php");
 
 $query = "select pincode, areaname from online_tariff";
 
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
 
 $final = '[';
 
 
-while($line = mysql_fetch_array($result, MYSQL_ASSOC))
+while($line = mysqli_fetch_array($result, MYSQLI_ASSOC))
 {
 
 if($final=='[')
