@@ -12,7 +12,7 @@
 
 <body>
 <?php
-
+require_once "mai.php";
 $type = $_REQUEST["type"];
 $about = $_REQUEST["about"];
 $name = $_REQUEST["name"];
@@ -100,7 +100,7 @@ $msg = $msg . "Date : " . date("j-n-Y") ."\n";
 $msg = $msg . "Docket No : " . $docno ."\n";
 //echo $subject;
 //echo $msg;
-if(mail($to,$subject,$msg))
+if(Send_Mail($to,$name,$subject,$msg))
 {
 echo <<<END
 <div id='content'>

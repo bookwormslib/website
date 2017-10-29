@@ -12,7 +12,7 @@
 
 <body>
 <?php
-require_once "m1.php";
+require_once "mai.php";
 require_once("db.php");
 $initial  = $_REQUEST["initial"];
 $name = $_REQUEST["name"];
@@ -154,7 +154,7 @@ $headers .= "To: $nameto <$to>" . $newLine;
 $headers .= "From: $namefrom <$from>" . $newLine;  
 
 //if(mail($to,$subject,$msg,$headers))
-if(authSendEmail($from, $namefrom, $to, $nameto, $subject, $msg))
+if(Send_Mail($to, $nameto, $subject, $msg))
 {
 echo <<<END
 <div id="content">
