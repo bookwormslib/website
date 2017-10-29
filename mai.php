@@ -2,7 +2,7 @@
 
 // Modify the path in the require statement below to refer to the 
 // location of your Composer autoload.php file.
-require 'path_to_sdk_inclusion';
+//require 'path_to_sdk_inclusion';
 
 // Instantiate a new PHPMailer 
 $mail = new PHPMailer;
