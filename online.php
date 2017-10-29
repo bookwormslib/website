@@ -16,11 +16,11 @@ if (!empty($email) && !empty($password))
 require_once("db.php");
 require_once "m1.php";
 $query = "select * from customer_reg where email like " . concat($email) . " and password like " . concat($password) . " and cus_no is not null";
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$num = mysql_num_rows($result);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$num = mysqli_num_rows($result);
 if($num > 0)
 {
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $name = $line['name'];
 $stat = $line['status'];
 $cusno = $line['cus_no'];
@@ -30,41 +30,41 @@ if ( $stat == 'A')
 //Check for Payment
 $query = "select max(pay_date) as pay from payment where customer_no like " . concat($cusno);
 //echo $query;
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$num = mysql_num_rows($result);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$num = mysqli_num_rows($result);
 if($num > 0)
 {
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $max_date = $line['pay'];
 $query= "select period_diff(DATE_FORMAT(now(),'%Y%m'),DATE_FORMAT(" . concat($max_date) . ",'%Y%m')) as period" ;
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $period = $line['period'];
 if($period <= 12)
 {
 //Check for month limit
 $query="update customer_request set status = 'D' where cus_no like '" . $cusno ."' and status like 'I'";
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
 $query = "select count(*) as limits from customer_check_out where customer_no like " . concat($cusno) . " and status like '1' and
 extract(year_month from check_out_date) = extract(year_month from now())";
 //echo $query;
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $limit1 = $line['limits'];
 $query = "select count(*) as limits2 from customer_check_out where customer_no like " . concat($cusno) . " and status like '0'"; 
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $limit2 = $line['limits2'];
 $query = "select count(*) as lim from customer_check_out where customer_no like " . concat($cusno) . " and
 extract(year_month from check_out_date) = extract(year_month from now()) and status not in ('0','4')"; 
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $curlimit = $line['lim'] + $limit2;
 $this = $line['lim'];
 //echo $curlimit;
 $query = "select count(*) as inhand from customer_check_out where customer_no like " . concat($cusno). " and status like '1'";
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $inhand = $line['inhand'];
 $ts = time();
 $id = $ts . $cusno;
@@ -109,7 +109,7 @@ header("Location: main.php");
 else
 {
 $query = "update customer_reg set status='L' where cus_no like " . concat($cusno);
-$result = mysql_query($query)  or die('Query failed: ' . mysql_error());
+$result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
 include("paymentdue.php");
 }
 }
