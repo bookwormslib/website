@@ -10,17 +10,17 @@ if (strcmp($invno,""))
 $ind++;
 $query = "select * from inventory where inventory_no = '" . $invno . "'";
 $query1 = "select * from inventory_social where source='GOG' and inventory_no = '" .  $invno . "'";
-$result = mysql_query($query) or die('Query failed: ' . mysql_error());
-$result1 = mysql_query($query1) or die('Query failed: ' . mysql_error());
+$result = mysqli_query($con,$query) or die('Query failed: ' . mysqli_error($con));
+$result1 = mysqli_query($con,$query1) or die('Query failed: ' . mysqli_error($con));
 }
 $max=0;
 if ($ind!=0)
 {
-$max = mysql_num_rows($result);
+$max = mysqli_num_rows($result);
 }
 if($max>0)
 {
-$line = mysql_fetch_array($result, MYSQL_ASSOC);
+$line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $auth=$line["author"];
 
 $tit=$line["title"];
@@ -172,11 +172,11 @@ echo"</div><br>";
 $max=0;
 if ($ind!=0)
 {
-$max = mysql_num_rows($result1);
+$max = mysqli_num_rows($result1);
 }
 if($max>0)
 {
-$line = mysql_fetch_array($result1, MYSQL_ASSOC);
+$line = mysqli_fetch_array($result1, MYSQLI_ASSOC);
 
 echo <<<END
 <div id='content'>
