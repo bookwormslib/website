@@ -7,15 +7,15 @@
 <meta name="description" content="bookworms library chennai official site" />
 <meta name="keywords" content="bookworms,chennai,official,mobile,online,static,kknagar" />
 <meta name="author" content="Your Name / Original design by Andreas Viklund - http://andreasviklund.com" />
-<link href="http://www.bookwormslib.com/book.gif" rel="shortcut icon">
+<link href="https://www.bookwormslibrary.com/book.gif" rel="shortcut icon">
 <META name="verify-v1" content="ZIXoeLZau3BY7h6PfJ96xd1qOxyDW3/WNkHZ7U6oe08=" />
 
 <meta property="og:title" content="bookworm library chennai - Your online neighbourhood library"/> 
 <meta property="og:type" content="company" />
-<meta property="og:image" content="http://www.bookwormslibrary.com/book.gif"/> 
-<meta property="og:url" content="http://www.bookwormslibrary.com/"/> 
-<meta property="og:site_name" content="bookwormslib"/> 
-<meta property="og:url" content="http://www.bookwormslibrary.com/"/> 
+<meta property="og:image" content="https://www.bookwormslibrary.com/book.gif"/> 
+<meta property="og:url" content="https://www.bookwormslibrary.com/"/> 
+<meta property="og:site_name" content="bookwormslibrary"/> 
+<meta property="og:url" content="https://www.bookwormslibrary.com/"/> 
 <meta property="fb:admins" content="100002881823921" />
 
 <style>
@@ -43,11 +43,11 @@
 
 <script src="scroll.php"></script>
 
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 <link rel="stylesheet" href="andreas09.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" type="text/css" media="screen" />
 
 <script type="text/javascript">
 
@@ -321,7 +321,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 <h2><b>On Floor Library<b></h2>
 <img src="images/libpic.jpg" height="100" width="150" alt="Static library" />
 
-<p class="intro" align="justify">bookworms’ library is a landmark in kk nagar, catering to over 2000 booklovers in and around.  Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently.  Magazines are also available for lending ...
+<p class="intro" align="justify">bookwormsÂ’ library is a landmark in kk nagar, catering to over 2000 booklovers in and around.  Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently.  Magazines are also available for lending ...
 <br><br>
 <a href=staticlib.html> Click to read more...</a>
 <br><br><br><br>
