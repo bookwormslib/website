@@ -2,20 +2,20 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>bookworms' library : a nest too cosy to miss...</title>
+<title>stories library : a nest too cosy to miss...</title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-<meta name="description" content="bookworms library chennai official site" />
-<meta name="keywords" content="bookworms,chennai,official,mobile,online,static,kknagar" />
+<meta name="description" content="stories library chennai official site" />
+<meta name="keywords" content="stories,chennai,official,mobile,online,static,kknagar" />
 <meta name="author" content="Your Name / Original design by Andreas Viklund - http://andreasviklund.com" />
-<link href="https://www.bookwormslibrary.com/book.gif" rel="shortcut icon">
+<link href="https://www.storieslibrary.in/book.gif" rel="shortcut icon">
 <META name="verify-v1" content="ZIXoeLZau3BY7h6PfJ96xd1qOxyDW3/WNkHZ7U6oe08=" />
 
 <meta property="og:title" content="bookworm library chennai - Your online neighbourhood library"/> 
 <meta property="og:type" content="company" />
-<meta property="og:image" content="https://www.bookwormslibrary.com/book.gif"/> 
-<meta property="og:url" content="https://www.bookwormslibrary.com/"/> 
-<meta property="og:site_name" content="bookwormslibrary"/> 
-<meta property="og:url" content="https://www.bookwormslibrary.com/"/> 
+<meta property="og:image" content="https://www.storieslibrary.in/book.gif"/> 
+<meta property="og:url" content="https://www.storieslibrary.in/"/> 
+<meta property="og:site_name" content="storieslibrary"/> 
+<meta property="og:url" content="https://www.storieslibrary.in/"/> 
 <meta property="fb:admins" content="100002881823921" />
 
 <style>
@@ -206,7 +206,7 @@ $("#totalspan").text(total);
 <table width="100%">
 <tr>
 <td>
-<h1>bookworms' library</h1>
+<h1>stories library</h1>
 <b>Nest unsurpassable for bookworms...clean...cozy...cavernous</b>
 </td>
 <td align="right" >
@@ -235,7 +235,7 @@ initSlidingContent('news',1);
 
 <h1>Recommend us</h1>
 <div id="fb-root"></div>
-<div class="fb-like" data-href="http://www.bookwormslib.com/" data-send="false" data-layout="box_count" data-width="170" data-show-faces="false" data-action="recommend"></div>
+<div class="fb-like" data-href="http://www.storieslibrary.in/" data-send="false" data-layout="box_count" data-width="170" data-show-faces="false" data-action="recommend"></div>
 <br>
 
 </div>
