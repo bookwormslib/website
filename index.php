@@ -289,7 +289,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 <div id="content">
 
 <p align="right">
-<marquee scrolldelay='150'><font color="#000080">| Welcome to bookworms' library - For Subscription/Advertising | Call 91-044-24899779 | Facility of membership for Online & Library on Wheels will be available only to the Chennaities |</font> </marquee>
+<marquee scrolldelay='150'><font color="#000080">| Welcome to stories (bookworms' library) - For Subscription/Advertising | Call 91-044-24899779 | Facility of membership for Online & Library on Wheels will be available only to the Chennaities |</font> </marquee>
 <br>
  
 <h2>Online Social Library </h2>
@@ -321,7 +321,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 <h2><b>On Floor Library<b></h2>
 <img src="images/libpic.jpg" height="100" width="150" alt="Static library" />
 
-<p class="intro" align="justify">bookworms library is a landmark in kk nagar, catering to over 2000 booklovers in and around.  Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently.  Magazines are also available for lending ...
+<p class="intro" align="justify">stories library is a landmark in kk nagar, catering to over 2000 booklovers in and around.  Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently.  Magazines are also available for lending ...
 <br><br>
 <a href=staticlib.html> Click to read more...</a>
 <br><br><br><br>
