@@ -1,1 +1,1 @@
-document.write("&copy; 2018 bookworms' library");
+document.write("&copy; 2018 stories library");
