@@ -1,5 +1,5 @@
 <?php
-require_once("OpenIDConnectClient.php");
+require_once("oidc/vendor/autoload.php");
 use Jumbojett\OpenIDConnectClient;
 
 if (!function_exists('getallheaders')) {
