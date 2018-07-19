@@ -27,6 +27,7 @@ $sub = $oidc->getVerifiedClaims('sub');
 
 echo $oidc->getIdToken();
 echo $sub;
+echo $name;
 
 /*foreach (getallheaders() as $name => $value) {
     echo "$name: $value\n";
