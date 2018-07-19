@@ -1,6 +1,6 @@
 <?php
-// please use the sha256 from: http://www.nanolink.ca/pub/sha256/
-include("OpenIDConnectClient.php");
+require __DIR__ . '/vendor/autoload.php';
+use Jumbojett\OpenIDConnectClient;
 
 $oidc = new OpenIDConnectClient(
     'https://accounts.google.com',
