@@ -27,7 +27,7 @@ foreach (getallheaders() as $name => $value) {
 $oidc->authenticate();
 $name = $oidc->requestUserInfo('given_name');
 
-echo $oidc->idToken;
+echo $oidc->getIdToken();
 
 foreach (getallheaders() as $name => $value) {
     echo "$name: $value\n";
