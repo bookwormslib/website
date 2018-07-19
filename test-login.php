@@ -33,7 +33,7 @@ foreach (getallheaders() as $name => $value) {
 }*/
 
 $oidc = new OpenIDConnectClient("https://www.peercraft.com/");
-
+$oidc->setClientName("stories library");
 $oidc->register();
 $client_id = $oidc->getClientID();
 $client_secret = $oidc->getClientSecret();
