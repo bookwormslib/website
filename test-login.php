@@ -20,14 +20,13 @@ $oidc = new OpenIDConnectClient(
     getenv('CLIENT_SEC')
 );
 
-foreach (getallheaders() as $name => $value) {
-    echo "$name: $value\n";
-}
 
 $oidc->authenticate();
 $name = $oidc->requestUserInfo('given_name');
+$sub = $oidc->getVerifiedClaims('sub');
 
 echo $oidc->getIdToken();
+echo $sub;
 
 foreach (getallheaders() as $name => $value) {
     echo "$name: $value\n";
