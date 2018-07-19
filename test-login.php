@@ -14,3 +14,4 @@ $name = $oidc->requestUserInfo('given_name');
 ?>
 
 <?php echo $name; ?>
+<?php echo $_GET['hehe']; ?>
