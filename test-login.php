@@ -14,7 +14,7 @@ if (!function_exists('getallheaders')) {
     }
 }
 
-$oidc = new OpenIDConnectClient(
+/*$oidc = new OpenIDConnectClient(
     'https://accounts.google.com',
     getenv('CLIENT_ID'),
     getenv('CLIENT_SEC')
@@ -30,9 +30,17 @@ echo $sub;
 
 foreach (getallheaders() as $name => $value) {
     echo "$name: $value\n";
-}
+}*/
+
+$oidc = new OpenIDConnectClient("https://www.peercraft.com/");
+
+$oidc->register();
+$client_id = $oidc->getClientID();
+$client_secret = $oidc->getClientSecret();
+
+echo $client_id;
+echo $client_secret;
 
 ?>
 
-<?php echo $name; ?>
-<?php echo $_GET['hehe']; ?>
+
