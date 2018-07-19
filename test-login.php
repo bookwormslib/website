@@ -7,9 +7,17 @@ $oidc = new OpenIDConnectClient(
     getenv('CLIENT_ID'),
     getenv('CLIENT_SEC')
 );
+
+foreach (getallheaders() as $name => $value) {
+    echo "$name: $value\n";
+}
+
 $oidc->authenticate();
 $name = $oidc->requestUserInfo('given_name');
 
+foreach (getallheaders() as $name => $value) {
+    echo "$name: $value\n";
+}
 
 ?>
 
