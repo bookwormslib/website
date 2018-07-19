@@ -14,10 +14,10 @@ if (!function_exists('getallheaders')) {
     }
 }
 
-/*$oidc = new OpenIDConnectClient(
-    'https://accounts.google.com',
-    getenv('CLIENT_ID'),
-    getenv('CLIENT_SEC')
+$oidc = new OpenIDConnectClient(
+    'https://www.peercraft.com/',
+    getenv('PEER_CLIENT_ID'),
+    getenv('PEER_CLIENT_SEC')
 );
 
 
@@ -28,15 +28,15 @@ $sub = $oidc->getVerifiedClaims('sub');
 echo $oidc->getIdToken();
 echo $sub;
 
-foreach (getallheaders() as $name => $value) {
+/*foreach (getallheaders() as $name => $value) {
     echo "$name: $value\n";
 }*/
 
-$oidc = new OpenIDConnectClient("https://www.peercraft.com/");
+/*$oidc = new OpenIDConnectClient("https://www.peercraft.com/");
 $oidc->setClientName("stories library");
 $oidc->register();
 $client_id = $oidc->getClientID();
-$client_secret = $oidc->getClientSecret();
+$client_secret = $oidc->getClientSecret();*/
 
 echo $client_id;
 echo "-----------------------------------------";
