@@ -39,7 +39,7 @@ $client_id = $oidc->getClientID();
 $client_secret = $oidc->getClientSecret();
 
 echo $client_id + "<br>";
-echo $client_secret + "<br>;
+echo $client_secret + "<br>";
 
 ?>
 
