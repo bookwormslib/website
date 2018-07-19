@@ -38,7 +38,9 @@ $oidc->register();
 $client_id = $oidc->getClientID();
 $client_secret = $oidc->getClientSecret();
 
-echo $client_id + "----------------" + $client_secret;
+echo $client_id;
+echo "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF";
+echo $client_secret;
 
 
 ?>
