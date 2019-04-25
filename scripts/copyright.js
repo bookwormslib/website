@@ -1,1 +1,1 @@
-document.write("&copy; 2018 stories library");
+document.write("&copy; 2019 stories library cafe");
