@@ -273,7 +273,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 <h1>Follow us @</h1>
 <div>
 <a class="icon i-socTwitter" title="Twitter" target="_blank" href="https://twitter.com/bookwormslib2k1">Twitter</a> 
-<a class="icon i-socFacebook" title="Facebook" target="_blank" href="http://www.facebook.com/bookworms3/">Facebook</a>
+<a class="icon i-socFacebook" title="Facebook" target="_blank" href="https://www.facebook.com/storieslibrarycafe/">Facebook</a>
 </div>
 <br>
 
