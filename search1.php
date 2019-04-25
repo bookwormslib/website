@@ -2,12 +2,21 @@
 "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<title>bookworms' library : a nest too cosy to miss...</title>
+<title>#stories library cafe: a nest too cosy to miss...</title>
 <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
-<meta name="description" content="bookworms library chennai" />
-<meta name="keywords" content="bookwomrs,library,chennai,online,mobile" />
+<meta name="description" content="stories library cafe chennai official site" />
+<meta name="keywords" content="stories,library,cafe,chennai,official,mobile,online,static,kknagar" />
 <meta name="author" content="Your Name / Original design by Andreas Viklund - http://andreasviklund.com" />
-<link rel="stylesheet" href="andreas09.css" type="text/css" media="screen" />
+<link href="https://www.storieslibrary.in/cafe-logo.png" rel="shortcut icon">
+<META name="verify-v1" content="ZIXoeLZau3BY7h6PfJ96xd1qOxyDW3/WNkHZ7U6oe08=" />
+
+<meta property="og:title" content="bookworm library chennai - Your online neighbourhood library"/> 
+<meta property="og:type" content="company" />
+<meta property="og:image" content="https://www.storieslibrary.in/cafe-logo.png"/> 
+<meta property="og:url" content="https://www.storieslibrary.in/"/> 
+<meta property="og:site_name" content="storieslibrary"/> 
+<meta property="og:url" content="https://www.storieslibrary.in/"/> 
+  
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
