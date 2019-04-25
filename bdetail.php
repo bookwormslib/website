@@ -319,4 +319,6 @@ echo "</div>";
 <div class="clearingdiv">&nbsp;</div>
 </div>
 </div>
-<div id="footer">&copy; 2006-2010 bookworms' library | Design by <a href="http://www.sayee.no-ip.com">Seshasayee Gopi</a> | Tech Support by <a href="http://www.fourvees.com">Vishnu Vijayaraghavan</a></div>
+<div id="footer">
+<script src="scripts/copyright.js"></script>
+</div>
