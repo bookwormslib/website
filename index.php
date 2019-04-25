@@ -318,7 +318,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 <div id="content">
 
 <h2><b>Library Cafe<b></h2>
-<img src="images/libpic.jpg" height="100" width="150" alt="Library Cafe" />
+<img src="cafepic.jpg" height="100" width="150" alt="Library Cafe" />
 
 <p class="intro" align="justify">stories library cafe is a landmark in kk nagar, catering to over 2000 booklovers in and around along with attached cafe.  Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently.  Magazines are also available for lending ...
 <br><br>
