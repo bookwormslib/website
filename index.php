@@ -322,7 +322,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 
 <p class="intro" align="justify">stories library cafe is a landmark in kk nagar, catering to over 2000 booklovers in and around along with attached cafe.  Books from alphabet to cookery to yoga to management to fiction are well stocked and being added frequently.  Magazines are also available for lending ...
 <br><br>
-<a href=staticlib.html> Click to read more...</a>
+<a href=librarycafe.html> Click to read more...</a>
 <br><br><br><br>
 </p>
 
