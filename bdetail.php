@@ -40,10 +40,11 @@ $tit=$line["title"];
 <meta name="keywords" content="bookworms,library,chennai,online,mobile" />
 <meta name="author" content="Your Name / Original design by Andreas Viklund - http://andreasviklund.com" />
 <link rel="stylesheet" href="andreas09.css" type="text/css" media="screen" />
-
+<link href="https://www.storieslibrary.in/cafe-logo.png" rel="shortcut icon">
+  
 <meta property="og:title" content="<?php echo $tit; ?> @ bookworms' library : a nest too cosy to miss..."/> 
 <meta property="og:type" content="company" />
-<meta property="og:image" content="http://www.bookwormslib.com/book.gif"/>
+<meta property="og:image" content="http://www.bookwormslib.com/cafe-logo.pnf"/>
 <meta property="og:url" content="http://www.bookwormslib.com/bdetail.php?invno=<?php echo $invno; ?>"/> 
 <meta property="og:site_name" content="bookwormslibinv"/>
 <meta property="og:ref" content="<?php echo $invno; ?>"/>
