@@ -15,6 +15,10 @@ if (!empty($email) && !empty($password))
 {
 require_once("db.php");
 require_once "m1.php";
+
+$email = mysqli_real_escape_string($con,$email);
+$password = mysqli_real_escape_string($con,$password);
+ 
 $query = "select * from customer_reg where email like " . concat($email) . " and password like " . concat($password) . " and cus_no is not null";
 $result = mysqli_query($con,$query)  or die('Query failed: ' . mysqli_error($con));
 $num = mysqli_num_rows($result);
