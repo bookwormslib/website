@@ -77,7 +77,7 @@ return $str;
 }
 
 function dateconvert($date) {
-list($day, $month, $year) = split('[/.-]', $date);
+list($day, $month, $year) = explode('[/.-]', $date);
 $date = "$year-$month-$day";
 return $date;
 } 
