@@ -129,6 +129,11 @@ $subj = $_REQUEST[subject];
 $page = $_REQUEST[page];
 //$a = array("AS","AS","AS");
 
+$keyword = mysqli_real_escape_string($con,$keyword)
+$auth = mysqli_real_escape_string($con,$auth)
+$subj = mysqli_real_escape_string($con,$subj)
+$page = mysqli_real_escape_string($con,$page)
+  
 $ind=0;
 if (strcmp($keyword,""))
 {
@@ -159,11 +164,10 @@ $b = $b . " and " . $a[$j];
 $d = $d . "&" . $c[$j];
 }
 $query = $query . $b;
-$query1 = mysqli_real_escape_string($con,$query)
 $link = $link . $d;
 //echo $query;
 //echo $link;
-$result = mysqli_query($con,$query1) or die('Query failed: ' . mysqli_error($con));
+$result = mysqli_query($con,$query) or die('Query failed: ' . mysqli_error($con));
 }
 ?>
 <div id="container">
