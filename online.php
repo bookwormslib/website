@@ -138,7 +138,7 @@ $headers .= "Content-type: text/html; charset=iso-8859-1" . $newLine;
 $headers .= "To: $nameto <$to>" . $newLine;  
 $headers .= "From: $namefrom <$from>" . $newLine;  
 //authSendEmail($from, $namefrom, $to, $nameto, $subject, $msg);
-Send_Mail($to,$from,$subject,$msg);
+Send_Mail($to,$nameto,$subject,$msg);
 }
 else if ($stat == 'L')
 include ("activelock.php");
