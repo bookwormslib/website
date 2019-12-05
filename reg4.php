@@ -200,7 +200,7 @@ return false;
 </tr>
 <tr class="row">
 <th><font color="red">Pincode</font></th>
-<td><input type="text" class="searchbox1" name="pincode" disabled="true" value='<?php echo $_POST["pincodeHidden"] ?>' ></td>
+<td><input type="text" class="searchbox1" name="pincode" readonly="true" value='<?php echo $_POST["pincodeHidden"] ?>' ></td>
 </tr>
 <tr class="row">
 <th><font color="red">Phone</font></th>
@@ -216,7 +216,7 @@ return false;
 <td><input id="mail" type="text" class="searchbox1" name="mail"></td>
 </tr>
 
-<!--
+
 
 <tr class="row">
 <th>Office Name</th>
@@ -232,7 +232,7 @@ return false;
 <td><input type="text" class="searchbox1" name="off_phone"></td>
 </tr>
 
--->
+
 
 </table>
 <br>
