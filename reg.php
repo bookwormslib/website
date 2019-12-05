@@ -155,14 +155,14 @@ $line = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $regid = $line['reg_id'];
 
 $to = $mail;
-$subject = "Your Registration @ bookworms' library";
-$msg =  "Hi " . $name . ",<br><br>Welcome to bookworms' library.<br><br><b> Thank you for subscribing to the Online version of bookworms'.</b><br><br>Please kindly confirm your E-Mail Id to further process your subscription.";
-$msg .= "<br><br>Please <a href='http://www.bookwormslib.com/verify.php?mail=" . urlencode($mail) . "&regid=" . $regid . "'> click here </a> to verify your E-Mail id for further procesing.";
-$msg .= "<br><br>Thanks,<br><b>bookworms'</b>";
+$subject = "Your Registration @ #Stories library";
+$msg =  "Hi " . $name . ",<br><br>Welcome to #Stories library.<br><br><b> Thank you for subscribing to the Online version of #Stories.</b><br><br>Please kindly confirm your E-Mail Id to further process your subscription.";
+$msg .= "<br><br>Please <a href='http://www.storieslibrary.in/verify.php?mail=" . urlencode($mail) . "&regid=" . $regid . "'> click here </a> to verify your E-Mail id for further procesing.";
+$msg .= "<br><br>Thanks,<br><b>#Stories</b>";
 
 $nameto = $name;  
-$from = "info@bookwormslibrary.com";  
-$namefrom = "Bookworms Registration";  
+$from = "info@storieslibrary.in";  
+$namefrom = "Stories Registration";  
 $newLine = "\r\n";  
 
 $headers = "MIME-Version: 1.0" . $newLine;  
@@ -175,7 +175,7 @@ if(Send_Mail($to, $nameto, $subject, $msg))
 {
 echo <<<END
 <div id="content">
-<center><h3>Thank you for Subscribing @bookworms'</h3>
+<center><h3>Thank you for Subscribing to #Stories</h3>
 <h4>A verification mail has been sent to your E-Mail inbox. Please kindly confirm it to complete the subscription.</h4>
 </center>
 </div>
