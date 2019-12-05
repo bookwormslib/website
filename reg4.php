@@ -119,8 +119,11 @@ var f = "?mail=" + document.getElementById("mail").value;
 xmlhttp.open("GET","validate.php" + f,false);
 xmlhttp.send('');
 xmlDoc=xmlhttp.responseText;
-if(xmlDoc == "OK")
+console.log(xmlDoc);
+if(xmlDoc.includes("OK"))
+{
 return true;
+}
 else
 {
 alert(xmlDoc);
