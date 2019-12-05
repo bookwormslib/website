@@ -129,11 +129,7 @@ $subj = $_REQUEST[subject];
 $page = $_REQUEST[page];
 //$a = array("AS","AS","AS");
 
-$keyword = mysqli_real_escape_string($con,$keyword)
-$auth = mysqli_real_escape_string($con,$auth)
-$subj = mysqli_real_escape_string($con,$subj)
-$page = mysqli_real_escape_string($con,$page)
-  
+
 $ind=0;
 if (strcmp($keyword,""))
 {
