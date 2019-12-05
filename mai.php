@@ -15,7 +15,7 @@ $mail->isSMTP();
 
 // Replace sender@example.com with your "From" address. 
 // This address must be verified with Amazon SES.
-$mail->setFrom('info@bookwormslibrary.com', 'Bookworms');
+$mail->setFrom('info@storieslibrary.in', 'Bookworms');
 
 // Replace recipient@example.com with a "To" address. If your account 
 // is still in the sandbox, this address must be verified.
