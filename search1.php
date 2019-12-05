@@ -159,6 +159,7 @@ $b = $b . " and " . $a[$j];
 $d = $d . "&" . $c[$j];
 }
 $query = $query . $b;
+$query = mysqli_real_escape_string($query)
 $link = $link . $d;
 //echo $query;
 //echo $link;
