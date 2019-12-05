@@ -159,11 +159,11 @@ $b = $b . " and " . $a[$j];
 $d = $d . "&" . $c[$j];
 }
 $query = $query . $b;
-$query = mysqli_real_escape_string($query)
+$query1 = mysqli_real_escape_string($query)
 $link = $link . $d;
 //echo $query;
 //echo $link;
-$result = mysqli_query($con,$query) or die('Query failed: ' . mysqli_error($con));
+$result = mysqli_query($con,$query1) or die('Query failed: ' . mysqli_error($con));
 }
 ?>
 <div id="container">
