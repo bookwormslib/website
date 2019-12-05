@@ -32,6 +32,23 @@ $office= $_REQUEST["office"];
 $off_town= $_REQUEST["off_town"];
 $off_phone= $_REQUEST["off_phone"];
 
+$initial  = mysqli_real_escape_string($con,$initial);
+$name = mysqli_real_escape_string($con,$name);
+$password= mysqli_real_escape_string($con,$password);
+$dob=mysqli_real_escape_string($con,$dob);
+$apart_no=mysqli_real_escape_string($con,$apart_no);
+$block_no=mysqli_real_escape_string($con,$block_no);
+$apart_name=mysqli_real_escape_string($con,$apart_name);
+$door_no= mysqli_real_escape_string($con,$door_no);
+$street= mysqli_real_escape_string($con,$street);
+$town= mysqli_real_escape_string($con,$town);
+$pincode= mysqli_real_escape_string($con,$pincode);
+$phone= mysqli_real_escape_string($con,$phone);
+$mobile= mysqli_real_escape_string($con,$mobile);
+$mail= mysqli_real_escape_string($con,$mail);
+$office= mysqli_real_escape_string($con,$office);
+$off_town= mysqli_real_escape_string($con,$off_town);
+$off_phone= mysqli_real_escape_string($con,$off_phone);
 
 $ind=0;
 if (strcmp($name,""))
