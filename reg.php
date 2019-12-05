@@ -12,7 +12,7 @@
 
 <body>
 <?php
-require_once "mai.php";
+require_once("mai.php");
 require_once("db.php");
 $initial  = $_REQUEST["initial"];
 $name = $_REQUEST["name"];
