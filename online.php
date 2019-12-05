@@ -14,7 +14,7 @@ $password = md5($password);
 if (!empty($email) && !empty($password))
 {
 require_once("db.php");
-require_once "m1.php";
+require_once("mai.php");
 
 $email = mysqli_real_escape_string($con,$email);
 $password = mysqli_real_escape_string($con,$password);
@@ -137,7 +137,8 @@ $headers = "MIME-Version: 1.0" . $newLine;
 $headers .= "Content-type: text/html; charset=iso-8859-1" . $newLine;  
 $headers .= "To: $nameto <$to>" . $newLine;  
 $headers .= "From: $namefrom <$from>" . $newLine;  
-authSendEmail($from, $namefrom, $to, $nameto, $subject, $msg);
+//authSendEmail($from, $namefrom, $to, $nameto, $subject, $msg);
+Send_Mail($to,$from,$subject,$msg);
 }
 else if ($stat == 'L')
 include ("activelock.php");
