@@ -306,6 +306,16 @@ Password : <br><input type="password"  name=password class="searchbox">
 </div>
 
 <div id="content">
+<h2><b>Home Library on Rent<b></h2>
+<img src="thumbs/home_library.PNG" height="100" width="150" alt="Mobile library" />
+<p class="intro" align="justify">Stock books of your choice from our collection of over 35000 books @ your home
+<br><br>
+<a href="home_library.pdf"> Click to read more...</a>
+<br><br><br><br>
+</div>
+	
+	
+<div id="content">
 
 <h2><b>Library on wheels<b></h2>
 <img src="thumbs/mobile.jpg" height="100" width="150" alt="Mobile library" />
