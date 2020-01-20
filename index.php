@@ -288,7 +288,7 @@ Password : <br><input type="password"  name=password class="searchbox">
 <div id="content">
 
 <p align="right">
-<marquee scrolldelay='150'><font color="#000080">| Welcome to stories (bookworms' library) - For Subscription/Advertising | Call 91-044-42698327 | Facility of membership for Online & Library on Wheels will be available only to the Chennaities |</font> </marquee>
+<marquee scrolldelay='150'><font color="#000080">| Welcome to stories (bookworms' library) - For Subscription/Advertising | Call 91-044-42698327 | Facility of membership for Home Library & Library on Wheels will be available only to the Chennaities |</font> </marquee>
 <br>
  
 <h2>Online Social Library </h2>
