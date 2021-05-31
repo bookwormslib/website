@@ -121,6 +121,10 @@ a.tooltip:hover span{display:inline; position:absolute; background:#ffffff; bord
 <body>
 <?php
 
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+  
 require_once("db.php");
 
 $keyword = $_REQUEST[keyword];
