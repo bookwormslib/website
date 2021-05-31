@@ -18,22 +18,6 @@
 <meta property="og:url" content="https://www.storieslibrary.in/"/> 
 <link rel="stylesheet" href="andreas09.css" type="text/css" media="screen" />
   
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-28933931-1']);
-  _gaq.push(['_trackPageview','/search1.php?keyword=<?php echo $_REQUEST[keyword];?>']);
-//  _gaq.push(['_trackEvent', 'search', '<?php echo $_REQUEST[keyword];?>']);"
-  _gaq.push(['_trackEvent','search','action1','<?php echo $_REQUEST[keyword];?>',0]);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
 <style>
 .aa:hover {
 border-right: 3px solid #2b2b2b;
