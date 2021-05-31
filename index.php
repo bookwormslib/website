@@ -209,7 +209,7 @@ $("#totalspan").text(total);
 <h1>#stories library cafe</h1>
 </td>
 <td align="right" >
-<img src="cafe-logo.png" style="width:12%;height:12%" align="right"/>
+<img src="cafe-logo.png" style="width:12%;height:12%;object-fit: contain;" align="right"/>
 </td>
 </tr>
 </table>
