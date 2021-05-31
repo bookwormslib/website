@@ -68,18 +68,7 @@
 <div id="container">
 
 <div id="sitename">
-<table width="100%">
-<tr>
-<td>
-<h1>bookworms' library</h1>
-<b>Nest unsurpassable for bookworms...clean...cozy...cavernous</b>
-</td>
-<td align="right" >
-<img src="book.gif" align"right">
-
-</td>
-</tr>
-</table>
+<script src="scripts/banner.js"></script>
 </div>
 
 <div id="mainmenu">
