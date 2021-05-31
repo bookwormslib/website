@@ -236,7 +236,7 @@ echo "<img alt='Select title to see the book details' style=border-style:none;bo
 }else{
 echo "<img alt='Select title to see the book details' style=border-style:none;border:none' src='" . $line["smallthumb_img"] . "' width='30%' height='75%'/></div>";
 }
-echo "<div id='dwrap' style='width:75%;height:95%;'><div><a class='gg' style='font-size:150%;font-weight:bold;' href='bdetail.php?invno=" . $line["inventory_no"]  . "'>" . $line["title"] . "</a><br> By <a href='search1.php?author=" . urlencode ($line[author]) . "&page=1'>" . $line[author] ."</a><br><br></div></div>";
+echo "<div id='dwrap' style='width:75%;height:95%;'><div><a class='gg' style='font-size:150%;font-weight:bold;' href='bdetail.php?invno=" . $line["inventory_no"]  . "'>" . $line["title"] . "</a><br> By <a href='search1.php?author=" . urlencode ($line["author"]) . "&page=1'>" . $line["author"] ."</a><br><br></div></div>";
 
 if ($line["available"] == "Y")
 echo "<div id='dwrap' style='width:10%;height:95%;border-right:none'><a align='center' class='tooltip' href='mailrequest.php?invno=" .  $line["inventory_no"] ."'><span>Book Request for Mobile Members Only.</span><img align='center' alt='Request for Mobile Members' src='tick.png' width='20%'/></a></div>";
