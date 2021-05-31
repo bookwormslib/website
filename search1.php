@@ -111,10 +111,10 @@ error_reporting (E_ALL);
   
 require_once("db.php");
 
-$keyword = $_REQUEST[keyword];
-$auth = $_REQUEST[author];
-$subj = $_REQUEST[subject];
-$page = $_REQUEST[page];
+$keyword = $_REQUEST['keyword'];
+$auth = $_REQUEST['author'];
+$subj = $_REQUEST['subject'];
+$page = $_REQUEST['page'];
 //$a = array("AS","AS","AS");
 
 $keyword = mysqli_real_escape_string($con,$keyword);
