@@ -120,8 +120,4 @@ a.tooltip:hover span{display:inline; position:absolute; background:#ffffff; bord
 
 <body>
 
-<?php
-  
-require_once("db.php");
-phpinfo();
-?>
+
