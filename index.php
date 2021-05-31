@@ -204,7 +204,7 @@ $("#totalspan").text(total);
 <div id="sitename">
 
 <div id="leftside">
-<h1 style="color:white;">#stories library cafe</h1>
+<h1 style="color:white;font-weight: bold;font-variant: small-caps;">#stories library cafe</h1>
 </div>
 <div id="rightside">
 <img src="cafe-logo.png" style="width:50%;height:50%;object-fit: contain;" align="right"/>
