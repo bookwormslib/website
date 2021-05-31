@@ -123,7 +123,7 @@ dddddd
 <?php
   
 require_once("db.php");
-
+phpinfo();
 $keyword = $_REQUEST[keyword];
 $auth = $_REQUEST[author];
 $subj = $_REQUEST[subject];
