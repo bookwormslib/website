@@ -203,16 +203,12 @@ $("#totalspan").text(total);
 
 <div id="sitename">
 
-<table width="100%">
-<tr>
-<td>
+<div id="leftside">
 <h1>#stories library cafe</h1>
-</td>
-<td align="right" >
+</div>
+<div id="rightside">
 <img src="cafe-logo.png" style="width:12%;height:12%;object-fit: contain;" align="right"/>
-</td>
-</tr>
-</table>
+</div>
 </div>
 
 <div id="mainmenu">
